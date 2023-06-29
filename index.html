@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+</head>
+
+<style>
+* {padding: 0; margin: 0; font-family: monospace;}
+ul {list-style: none; background: rgb(168, 27, 27);}
+ul li {display: inline-block; position: relative;}
+ul li a {display: block; padding: 20px 25px; color: #FFF; text-decoration: none; text-align: center; font-size: 20px;}
+ul li ul.dropdown li {display: block;}
+ul li ul.dropdown {width: 100%; background: rgb(168, 27, 27); position: absolute; z-index: 999; display: none;}
+ul li a:hover {background: rgb(135, 15, 15);}
+ul li:hover ul.dropdown {display: block;}
+text {float: right; padding: 10%; border: none; margin-top: 8px; margin-right: 16px; font-size: 20px; font-family: monospace; }
+body {text-align:center; background-image: url(Blue\ Pop.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+
+.mySlides {display: none;}
+img {vertical-align: middle; width: 100%;}
+.slideshow-container {max-width: 800px; position: relative; margin: auto; padding-top: 2%;}
+.text {color: white; font-size: 15px; padding: 18px 12px; position: absolute; bottom: 8px; width: 100%; text-align: center;}
+.numbertext {color: white; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;}
+.dot {height: 15px; width: 15px; margin: 0 2px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;}
+.active {background-color: rgb(128, 121, 121);}
+.fade {animation-name: fade; animation-duration: 2.0s;}
+@keyframes fade {from {opacity: .4} to {opacity: 1}}
+@media only screen and (max-width: 300px) {.text {font-size: 11px}}
+
+#intro {padding-top: 4%; padding-left: 10%; padding-right: 10%;}
+#intro2 {padding-top: 4%;}
+#div1 {max-width: 800px; position: relative; margin: auto; padding-top: 4%;}
+#div2 {max-width: 800px; position: relative; margin: auto; padding-top: 4%;}
+</style>
+
+<body>
+  <ul>
+     <li><a href="index.html">Home</a></li>
+     <li>
+       <a>Entertainment ▾</a>
+       <ul class="dropdown">
+        <li><a href="1950s.Html">1950s</a></li>
+        <li><a href="1960s.html">1960s</a></li>
+        <li><a href="1970s.html">1970s</a></li>
+        <li><a href="1980s.html">1980s</a></li>
+        <li><a href="1990s.html">1990s</a></li>
+        <li><a href="2000s.html">2000s</a></li>
+        <li><a href="2010s.html">2010s</a></li>
+       </ul>
+       </li>
+     <li><a href="AboutUs.html">About Us</a></li>
+     <li><a href="ContactUs.html">Contact Us</a></li>
+  </ul>
+  
+  <div class="slideshow-container">
+
+    <div class="mySlides fade"><img src="1950s Poster.png" style="width:100%"></div>
+    <div class="mySlides fade"><img src="1960s Poster (2).png" style="width:100%"></div>
+    <div class="mySlides fade"><img src="1970s Poster (1).png" style="width:100%"></div>
+    <div class="mySlides fade"><img src="1980s Poster.png" style="width:100%"></div>
+    <div class="mySlides fade"><img src="1990s Poster.png" style="width:100%"></div>
+    <div class="mySlides fade"><img src="2000s poster (1).png" style="width:100%"></div>
+    <div class="mySlides fade"><img src="2010s Poster.png" style="width:100%"></div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";  }
+        
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}
+       
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active"; 
+        setTimeout(showSlides, 2000); 
+      }
+      </script><br><br>
+
+      <div id="Intro">
+      <h1>
+          Welcome to our captivating website dedicated to the enchanting world of movies. Here, we invite you to immerse yourself 
+          in the mesmerizing realm of cinematic storytelling, where every frame holds the power to transport you to unimaginable 
+          places, evoke a myriad of emotions, and ignite your imagination. From Hollywood blockbusters to independent gems, our 
+          curated collection of movie-related content offers a treasure trove of reviews, recommendations, and the latest updates 
+          from the film industry. 
+      </h1>
+    </div>
+
+    <div id="div1">
+      <img src="Decades to Discover Poster .png">
+    </div><br><br>
+
+    <div id="Intro2">
+      <h1>
+          Here we give you the opportunity to unncover films starting all the way back in the 1950s leading all the way up to the most 
+          recent movies of the 2010s. Join us as we celebrate the art of filmmaking and embark on a thrilling journey through the magic 
+          of movies.
+      </h1>
+    </div>
+
+    <div id="div2">
+      <img src="Cinema 2.avif">
+    </div><br><br>
+
+</body>
+</html>
