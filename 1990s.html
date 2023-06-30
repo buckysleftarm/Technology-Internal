@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+</head>
+
+<style>
+* {padding: 0; margin: 0; font-family: monospace;}
+ul {list-style: none; background: rgb(168, 27, 27);}
+ul li {display: inline-block; position: relative;}
+ul li a {display: block; padding: 20px 25px; color: #FFF; text-decoration: none; text-align: center; font-size: 20px;}
+ul li ul.dropdown li {display: block;}
+ul li ul.dropdown {width: 100%; background: rgb(168, 27, 27); position: absolute; z-index: 999; display: none;}
+ul li a:hover {background: rgb(135, 15, 15);}
+ul li:hover ul.dropdown {display: block;}
+text {float: right; padding: 10%; border: none; margin-top: 8px; margin-right: 16px; font-size: 20px; font-family: monospace; }
+body {text-align:center ;background-image: url(Popcorn\ 3\ background.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+
+#div1 {text-align: center; padding-top: 5%; font-size: xx-large;}
+#div2 {text-align: center; padding-top: 5%; font-size: medium;}
+
+.container {position: relative; width: 50%;}
+.image {opacity: 1; display: block; width: 100%; height: auto; transition: .5s ease; backface-visibility: hidden;}
+.middle {transition: .5s ease; opacity: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); text-align: center;}
+.container:hover .image {opacity: 0.3;}
+.container:hover .middle {opacity: 1;}
+.text {background-color: rgb(248, 248, 163); color: white; font-size: 16px; padding: 16px 32px; text-decoration: none; }
+img {padding-left: 5%; padding-top: 5%; }
+</style>
+
+<body>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+     <li>
+       <a>Entertainment ▾</a>
+       <ul class="dropdown">
+        <li><a href="1950s.Html">1950s</a></li>
+        <li><a href="1960s.html">1960s</a></li>
+        <li><a href="1970s.html">1970s</a></li>
+        <li><a href="1980s.html">1980s</a></li>
+        <li><a href="1990s.html">1990s</a></li>
+        <li><a href="2000s.html">2000s</a></li>
+        <li><a href="2010s.html">2010s</a></li>
+       </ul>
+       </li>
+     <li><a href="AboutUs.html">About Us</a></li>
+     <li><a href="ContactUs.html">Contact Us</a></li>
+  </ul>
+
+
+ <div id="div1"><h1>1990s</h1></div>
+ <div id="div2"><h1>Here are the top ten movies that were released in this decade</h1></div>
+
+ <div class="container">
+  <img src="Titanic Poster.webp" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"><a href="Titanic.html">Titanic</a></div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="Pulp Fiction Poster.webp" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"><a href="Pulp Fiction.html">Pulp Fiction</a></div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="Groundhog Day Poster.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"><a href="Groundhog Day.html">Groundhog Day</a></div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="The Truman Show Poster.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"><a href="Truman Show.html">The Truman Show</a></div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="Clueless Poster.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"><a href="Clueless.html">Clueless</a></div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="Jurassic Park Poster.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"><a href="Jurassic Park.html">Jurassic Park</a></div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="Forrest Gump Poster.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"><a href="Forrest Gump.html">Forrest Gump</a></div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="Silence of the Lambs Poster.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"><a href="Silence of the Lambs.html">Silence of the Lambs</a></div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="Home Alone Poster.webp" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"><a href="Home Alone.html">Home Alone</a></div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="Pretty Woman Poster.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"><a href="Pretty Woman.html">Pretty Woman</a></div>
+  </div>
+</div>
+</body>
+</html>
